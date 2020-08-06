@@ -1,0 +1,61 @@
+{
+   "title": "Sphere",
+   "type": "object",
+   "properties": {
+      "center": {
+         "$ref": "#/definitions/UnitfulCoordinate"
+      },
+      "radius": {
+         "$ref": "#/definitions/UnitfulValue"
+      }
+   },
+   "required": [
+      "center",
+      "radius"
+   ],
+   "definitions": {
+      "UnitfulCoordinate": {
+         "title": "UnitfulCoordinate",
+         "type": "object",
+         "properties": {
+            "values": {
+               "title": "Values",
+               "default": [
+                  0.5,
+                  0.5,
+                  0.5
+               ],
+               "minItems": 3,
+               "maxItems": 3,
+               "type": "array",
+               "items": {
+                  "type": "number"
+               }
+            },
+            "unit": {
+               "title": "Unit",
+               "default": "unitary",
+               "type": "string"
+            }
+         }
+      },
+      "UnitfulValue": {
+         "title": "UnitfulValue",
+         "type": "object",
+         "properties": {
+            "value": {
+               "title": "Value",
+               "type": "number"
+            },
+            "unit": {
+               "title": "Unit",
+               "default": "unitary",
+               "type": "string"
+            }
+         },
+         "required": [
+            "value"
+         ]
+      }
+   }
+}

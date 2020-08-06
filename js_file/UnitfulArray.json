@@ -1,0 +1,34 @@
+{
+   "title": "UnitfulArray",
+   "type": "object",
+   "properties": {
+      "values": {
+         "title": "Values",
+         "type": "array",
+         "items": {
+            "type": "number"
+         }
+      },
+      "unit": {
+         "title": "Unit",
+         "default": "unitary",
+         "type": "string"
+      },
+      "dimensionality": {
+         "title": "Dimensionality",
+         "default": -1,
+         "type": "integer"
+      },
+      "shape": {
+         "title": "Shape",
+         "default": [],
+         "type": "array",
+         "items": {
+            "type": "integer"
+         }
+      }
+   },
+   "required": [
+      "values"
+   ]
+}

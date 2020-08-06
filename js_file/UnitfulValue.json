@@ -1,0 +1,18 @@
+{
+   "title": "UnitfulValue",
+   "type": "object",
+   "properties": {
+      "value": {
+         "title": "Value",
+         "type": "number"
+      },
+      "unit": {
+         "title": "Unit",
+         "default": "unitary",
+         "type": "string"
+      }
+   },
+   "required": [
+      "value"
+   ]
+}
