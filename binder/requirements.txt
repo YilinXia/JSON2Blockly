@@ -3,3 +3,4 @@ pandas==0.25.0
 Networkx==1.9
 matplotlib==2.2.3
 nxpd==0.2.0
+graphviz==0.14
